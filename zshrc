@@ -28,3 +28,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zshrc-mine" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc-mine"
 fi
 # Customize to your needs...
+
+export PATH="/Applications/development/android/sdk/tools:$PATH"
+export PATH="/Applications/development/android/sdk/platform-tools:$PATH"
+export PATH="/Applications/development/android/sdk/build-tools:$PATH"
+
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'

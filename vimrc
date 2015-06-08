@@ -178,7 +178,7 @@ nnoremap <Right> 3<C-w>>
 nnoremap _ :split<cr>
 nnoremap \| :vsplit<cr>
 
-map <Leader>w :set invwrap<cr>
+map <Leader>l :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
 vmap s :!sort<CR>
@@ -217,14 +217,6 @@ let g:NERDSpaceDelims = 1
 nnoremap <C-y> :YRShow<cr>
 let g:yankring_history_dir = '$HOME/.vim'
 let g:yankring_manual_clipboard_check = 0
-
-map <Leader>l :MiniBufExplorer<cr>
-let g:miniBufExplorerMoreThanOne = 10000
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplSplitBelow=1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplVSplit = 20
 
 let g:syntastic_enable_signs=1
 let g:syntastic_mode_map = { 'mode': 'active',

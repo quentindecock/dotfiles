@@ -41,7 +41,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
-Bundle 'nxw/vim-jsx'
+Bundle 'mxw/vim-jsx'
 
 """""""""""""""""""""""""
 " Basic features

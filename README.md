@@ -1,9 +1,9 @@
-# Crowdtap dotfile config
+# Dotfile config
 
 ## Why a common dotfile config?
 
-* To be on the same page
-* Unleash TMUX and VIM productivity power
+* Share good practices within a team
+* Unleash development productivity
 
 ![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
 
@@ -14,10 +14,23 @@
 
 See below for further details
 
+## Pre-requisite
+
+- zsh
+- git / git-core
+
+If not installed yet, under ubuntu install with `aptitude install zsh git git-core`
+
 ## Install
-1. clone this repository
-2. cd into the repository
-3. `./setup.sh`
+
+```
+cd
+git clone https://github.com/quentindecock/dotfiles.git .dotfiles
+cd .dotfiles
+./setup.sh
+zsh
+cd
+```
 
 ## TMUX config
 

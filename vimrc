@@ -40,6 +40,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-repeat'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
 Bundle 'mxw/vim-jsx'
@@ -48,6 +49,8 @@ Bundle 'slim-template/vim-slim'
 """""""""""""""""""""""""
 " Basic features
 """""""""""""""""""""""""
+set nocompatible
+
 " Display options
 syntax on
 set nocursorline

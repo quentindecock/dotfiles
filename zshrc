@@ -41,39 +41,39 @@ hitch() {
 }
 alias unhitch='hitch -u'
 
-# # auto-load SSH-AGENT
-# # ssh-agent
+# auto-load SSH-AGENT
+# ssh-agent
 
-# SSH_ENV="$HOME/.ssh/environment"
+SSH_ENV="/tmp/ssh-agent-environment"
 
-# function start_agent {
-     # echo "Initialising new SSH agent..."
-     # /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-     # echo succeeded
-     # chmod 600 "${SSH_ENV}"
-     # . "${SSH_ENV}" > /dev/null
-     # /usr/bin/ssh-add;
-# }
+function start_agent {
+     echo "Initialising new SSH agent..."
+     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+     echo succeeded
+     chmod 600 "${SSH_ENV}"
+     . "${SSH_ENV}" > /dev/null
+     /usr/bin/ssh-add;
+}
 
-# if [ -f "${SSH_ENV}" ]; then
-     # . "${SSH_ENV}" > /dev/null
-     # #ps ${SSH_AGENT_PID} doesn't work under cywgin
-     # ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-         # start_agent;
-     # }
-# else
-     # start_agent;
-# fi
+if [ -f "${SSH_ENV}" ]; then
+     . "${SSH_ENV}" > /dev/null
+     #ps ${SSH_AGENT_PID} doesn't work under cywgin
+     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+         start_agent;
+     }
+else
+     start_agent;
+fi
 
-# if [ -z "$SSH_TTY" ] ; then                     # if not using ssh
-  # ssh-add -l > /dev/null                        # check for keys
-  # if [ $? -ne 0 ] ; then
-    # alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh ; ssh'
-    # if [ -f "/usr/lib/ssh/x11-ssh-askpass" ] ; then
-      # SSH_ASKPASS="/usr/lib/ssh/x11-ssh-askpass" ; export SSH_ASKPASS
-    # fi
-  # fi
-# fi
+if [ -z "$SSH_TTY" ] ; then                     # if not using ssh
+  ssh-add -l > /dev/null                        # check for keys
+  if [ $? -ne 0 ] ; then
+    alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh ; ssh'
+    if [ -f "/usr/lib/ssh/x11-ssh-askpass" ] ; then
+      SSH_ASKPASS="/usr/lib/ssh/x11-ssh-askpass" ; export SSH_ASKPASS
+    fi
+  fi
+fi
 
-# # END auto-load SSH-AGENT
-# # ssh-agent
+# END auto-load SSH-AGENT
+# ssh-agent

@@ -14,10 +14,12 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'ervandew/screen'
 Bundle 'ervandew/supertab'
-Bundle 'fholgado/minibufexpl.vim'
+" Bundle 'fholgado/minibufexpl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'isRuslan/vim-es6'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/gist-vim'
@@ -25,7 +27,6 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'nviennot/molokai'
 Bundle 'othree/html5.vim'
-Bundle 'pangloss/vim-javascript'
 Bundle 'quentindecock/vim-cucumber-align-pipes'
 Bundle 'rking/ag.vim'
 Bundle 'rodjek/vim-puppet'
@@ -42,6 +43,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
 Bundle 'mxw/vim-jsx'
+Bundle 'slim-template/vim-slim'
 
 """""""""""""""""""""""""
 " Basic features
@@ -189,7 +191,8 @@ nnoremap \| :vsplit<cr>
 map <Leader>l :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
-vmap s :!sort<CR>
+" interferes with the surround plugin
+" vmap s :!sort<CR>
 
 " Write file when you forget to use sudo
 cmap w!! w !sudo tee % >/dev/null
@@ -218,7 +221,7 @@ map <silent> <Leader>gd :Gdiff<CR>
 map <silent> <Leader>gb :Gblame<CR>
 map <silent> <Leader>gg :Gbrowse<CR>
 
-nnoremap <Leader>a :Ack 
+nnoremap <Leader>a :Ack
 
 " Put a space around comment markers
 let g:NERDSpaceDelims = 1

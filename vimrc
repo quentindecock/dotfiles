@@ -53,7 +53,8 @@ set nocompatible
 syntax on
 set nocursorline
 set number
-set list!                       " Display unprintable characters
+set encoding=utf-8
+set fileencoding=utf-8
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 if $TERM =~ '256color'
   set t_Co=256

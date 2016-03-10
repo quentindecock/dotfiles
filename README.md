@@ -22,6 +22,18 @@ See below for further details
 
 If not installed yet, under ubuntu install with `aptitude install zsh git git-core`
 
+## Test it!
+
+This config is super easy to test, try it out (Vagrant is required):
+
+```
+git clone https://github.com/quentindecock/dotfiles.git /tmp/config-test
+cd /tmp/config-test
+vagrant up
+vagrant ssh
+sudo su
+```
+
 ## Install
 
 ```

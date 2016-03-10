@@ -17,10 +17,12 @@ Bundle 'ervandew/supertab'
 " Bundle 'fholgado/minibufexpl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
 Bundle 'isRuslan/vim-es6'
 Bundle 'kchmck/vim-coffee-script'
+" Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
+
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
@@ -43,7 +45,6 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-repeat'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
-Bundle 'mxw/vim-jsx'
 Bundle 'slim-template/vim-slim'
 
 """""""""""""""""""""""""
@@ -237,6 +238,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['c', 'scss', 'html', 'scala'] }
+let g:syntastic_javascript_checkers = ['jsxhint'] " depends on jsxhint (npm -g install jsxhint)
 
 let g:quickfixsigns_classes=['qfl', 'vcsdiff', 'breakpoints']
 
@@ -280,6 +282,12 @@ map <Leader>r :w<CR> :call ScreenShellSend("bundle exec rspec ".@% . ':' . line(
 map <Leader>e :w<CR> :call ScreenShellSend("bundle exec cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>w :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
+
+"""""""""""""""""""""""""
+" Javascript / JSX syntax
+"""""""""""""""""""""""""
+
+let g:jsx_ext_required = 0
 
 """""""""""""""""""""""""
 " Cscope

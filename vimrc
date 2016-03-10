@@ -285,7 +285,7 @@ map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
 " Javascript / JSX syntax
 """""""""""""""""""""""""
 
-let g:jsx_ext_required = 0
+let g:jsx_ext_required = 0 " set .js files to be highlighted as jsx files
 
 """""""""""""""""""""""""
 " Cscope

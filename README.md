@@ -19,6 +19,7 @@ See below for further details
 - zsh
 - git / git-core
 - node / npm
+- tmux
 
 If not installed yet, under ubuntu install with `aptitude install zsh git git-core`
 

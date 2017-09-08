@@ -211,7 +211,7 @@ let g:gundo_close_on_revert=1
 
 " TODO Merge the NERDTreeFind with Toggle inteilligently.
 nnoremap <C-g> :NERDTreeToggle<cr>
-nnoremap <C-f> :NERDTreeFind<cr>
+" nnoremap <C-f> :NERDTreeFind<cr>
 
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$',
                    \ '\.so$', '\.egg$', '^\.git$', '\.cmi', '\.cmo' ]

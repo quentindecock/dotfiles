@@ -43,6 +43,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
 Bundle 'slim-template/vim-slim'
+Bundle 'elixir-lang/vim-elixir'
 
 """""""""""""""""""""""""
 " Basic features
@@ -55,6 +56,7 @@ set nocursorline
 set number
 set encoding=utf-8
 set fileencoding=utf-8
+set list!
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 if $TERM =~ '256color'
   set t_Co=256
@@ -82,6 +84,9 @@ set directory=/tmp "sets the swap (.swp) file directory
 " up/down on displayed lines, not real lines. More useful than painful.
 noremap k gk
 noremap j gj
+
+" shift+k -> like shift+j, but no extra space
+noremap <S-k> gJ
 
 " Formatting, indentation and tabbing
 set autoindent smartindent
@@ -149,8 +154,8 @@ nnoremap <C-l> <C-w>l
 let mapleader=","
 let localmapleader=","
 
-nmap <Leader>s :%S/
-vmap <Leader>s :S/
+" nmap <Leader>s :%S/
+" vmap <Leader>s :S/
 
 vnoremap . :normal .<CR>
 vnoremap @ :normal! @
@@ -192,6 +197,7 @@ nnoremap \| :vsplit<cr>
 
 map <Leader>l :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
+map <Leader>s :SyntasticToggleMode<cr>
 
 " interferes with the surround plugin
 " vmap s :!sort<CR>
@@ -211,7 +217,7 @@ let g:gundo_close_on_revert=1
 
 " TODO Merge the NERDTreeFind with Toggle inteilligently.
 nnoremap <C-g> :NERDTreeToggle<cr>
-nnoremap <C-f> :NERDTreeFind<cr>
+" nnoremap <C-f> :NERDTreeFind<cr>
 
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$',
                    \ '\.so$', '\.egg$', '^\.git$', '\.cmi', '\.cmo' ]
@@ -232,11 +238,14 @@ nnoremap <C-y> :YRShow<cr>
 let g:yankring_history_dir = '$HOME/.vim'
 let g:yankring_manual_clipboard_check = 0
 
+" Syntastic
+
 let g:syntastic_enable_signs=1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['c', 'scss', 'html', 'scala'] }
 let g:syntastic_javascript_checkers = ['jsxhint'] " depends on jsxhint (npm -g install jsxhint)
+
 
 let g:quickfixsigns_classes=['qfl', 'vcsdiff', 'breakpoints']
 

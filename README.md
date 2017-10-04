@@ -21,7 +21,10 @@ See below for further details
 - node / npm
 - tmux
 
-If not installed yet, under ubuntu install with `aptitude install zsh git git-core`
+If not installed yet, under ubuntu install with
+```
+apt-get install -y zsh git git-core tmux nodejs npm
+```
 
 ## Test it!
 

@@ -41,12 +41,10 @@ sudo su
 ## Install
 
 ```
-cd
-git clone https://github.com/quentindecock/dotfiles.git .dotfiles
-cd .dotfiles
-./setup.sh
-zsh
-cd
+cd tmp/
+curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install.sh .
+chmod 755 install.sh
+./install.sh
 ```
 
 ## TMUX config

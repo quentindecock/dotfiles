@@ -42,7 +42,7 @@ sudo su
 
 ```
 cd tmp/
-curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install.sh .
+curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install.sh > install.sh
 chmod 755 install.sh
 ./install.sh
 ```

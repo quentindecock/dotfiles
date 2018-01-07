@@ -30,12 +30,10 @@ sudo apt-get install zsh git git-core nodejs npm tmux
 ## Install
 
 ```
-cd
-git clone https://github.com/quentindecock/dotfiles.git .dotfiles
-cd .dotfiles
-./setup.sh
-zsh
-cd
+cd tmp/
+curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install.sh > install.sh
+chmod 755 install.sh
+./install.sh
 ```
 
 ## TMUX config

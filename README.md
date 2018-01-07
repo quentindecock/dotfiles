@@ -21,21 +21,10 @@ See below for further details
 - node / npm
 - tmux
 
-If not installed yet, under ubuntu install with
-```
-apt-get install -y zsh git git-core tmux nodejs npm
-```
-
-## Test it!
-
-This config is super easy to test, try it out (Vagrant is required):
+If not installed yet, under ubuntu install with:
 
 ```
-git clone https://github.com/quentindecock/dotfiles.git /tmp/config-test
-cd /tmp/config-test
-vagrant up
-vagrant ssh
-sudo su
+sudo apt-get install zsh git git-core nodejs npm tmux
 ```
 
 ## Install

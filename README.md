@@ -1,11 +1,12 @@
 # Dotfile config
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W2Ih7l7ZM5E"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Why a common dotfile config?
 
 * Share good practices within a team
 * Unleash development productivity
-
-![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
 
 ## What's inside?
 * A solid VIM config

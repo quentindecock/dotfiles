@@ -21,19 +21,21 @@ See below for further details
 - node / npm
 - tmux
 
-If not installed yet, under ubuntu install with:
+If they are not installed yet, under Ubuntu you can install with:
 
 ```
-sudo apt-get install zsh git git-core nodejs npm tmux
+sudo apt-get install -y zsh git git-core nodejs npm tmux
 ```
 
 ## Install
 
+(Make sure you have installed all dependencies first!)
+
 ```
-cd tmp/
-curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install.sh > install.sh
-chmod 755 install.sh
-./install.sh
+cd /tmp
+curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install-dotfiles.sh > install-dotfiles.sh
+chmod 755 install-dotfiles.sh
+./install-dotfiles.sh
 ```
 
 ## TMUX config

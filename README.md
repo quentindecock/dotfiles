@@ -5,8 +5,6 @@
 * Share good practices within a team
 * Unleash development productivity
 
-![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
-
 ## What's inside?
 * A solid VIM config
 * A solid TMUX config

@@ -4,11 +4,6 @@
 
 declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc)
 
-if [ ! -d 'jsxhint' ]; then
-  echo 'installing jsxhint via npm'
-  sudo npm install -g jsxhint
-fi
-
 if [ ! -d 'zprezto' ]; then
   echo "Installing zprezto..."
   git clone -q --depth 1 --recursive https://github.com/sorin-ionescu/prezto.git zprezto

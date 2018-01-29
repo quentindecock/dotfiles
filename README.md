@@ -5,8 +5,6 @@
 * Share good practices within a team
 * Unleash development productivity
 
-![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
-
 ## What's inside?
 * A solid VIM config
 * A solid TMUX config
@@ -14,26 +12,33 @@
 
 See below for further details
 
-## Pre-requisite
-
-- zsh
-- git / git-core
-- node / npm
-- tmux
-
-If not installed yet, under ubuntu install with:
-
-```
-sudo apt-get install zsh git git-core nodejs npm tmux
-```
-
 ## Install
 
+### Install dependencies
+
+If they are not installed yet, under Ubuntu you can install with:
+
 ```
-cd tmp/
-curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install.sh > install.sh
-chmod 755 install.sh
-./install.sh
+sudo apt-get install -y zsh git git-core nodejs npm tmux curl
+sudo npm install -g jsxhint
+```
+
+### Install dotfiles
+
+```
+cd
+curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install-dotfiles.sh > install-dotfiles.sh
+chmod 755 install-dotfiles.sh
+./install-dotfiles.sh
+```
+
+For non root user make sure you set your default shell to zsh
+
+```
+# As root
+sudo chsh -s /bin/zsh <your-username>
+# As your user
+chsh -s /bin/zsh
 ```
 
 ## TMUX config

@@ -31,7 +31,7 @@ sudo apt-get install -y zsh git git-core nodejs npm tmux
 
 ```
 cd /tmp
-curl https://raw.githubusercontent.com/quentindecock/dotfiles/master/scripts/install-dotfiles.sh > install-dotfiles.sh
+curl https://raw.githubusercontent.com/quentindecock/dotfiles/qd-readme-2/scripts/install-dotfiles.sh > install-dotfiles.sh
 chmod 755 install-dotfiles.sh
 ./install-dotfiles.sh
 ```

@@ -82,5 +82,3 @@ alias unhitch='hitch -u'
 # configure grep
 
 # export GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=node_modules --exclude-dir=.git"
-
-unalias lt

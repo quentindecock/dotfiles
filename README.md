@@ -30,7 +30,7 @@ sudo apt-get install -y zsh git git-core nodejs npm tmux
 (Make sure you have installed all dependencies first!)
 
 ```
-cd /tmp
+cd
 curl https://raw.githubusercontent.com/quentindecock/dotfiles/qd-readme-2/scripts/install-dotfiles.sh > install-dotfiles.sh
 chmod 755 install-dotfiles.sh
 ./install-dotfiles.sh

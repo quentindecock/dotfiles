@@ -27,7 +27,7 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
-  'utility' \
+  # 'utility' \
   'syntax-highlighting' \
   'archive' \
   'fasd' \

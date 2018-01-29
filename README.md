@@ -25,13 +25,20 @@ sudo npm install -g jsxhint
 
 ### Install dotfiles
 
-(Make sure you have installed all dependencies first!)
-
 ```
 cd
 curl https://raw.githubusercontent.com/quentindecock/dotfiles/qd-readme-2/scripts/install-dotfiles.sh > install-dotfiles.sh
 chmod 755 install-dotfiles.sh
 ./install-dotfiles.sh
+```
+
+For non root user make sure you set your default shell to zsh
+
+```
+# As root
+sudo chsh -s /bin/zsh <your-username>
+# As your user
+chsh -s /bin/zsh
 ```
 
 ## TMUX config

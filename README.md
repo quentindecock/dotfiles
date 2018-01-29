@@ -19,7 +19,8 @@ See below for further details
 If they are not installed yet, under Ubuntu you can install with:
 
 ```
-sudo apt-get install -y zsh git git-core nodejs npm tmux
+sudo apt-get install -y zsh git git-core nodejs npm tmux curl
+sudo npm install -g jsxhint
 ```
 
 ### Install dotfiles

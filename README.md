@@ -12,12 +12,9 @@
 
 See below for further details
 
-## Pre-requisite
+## Install
 
-- zsh
-- git / git-core
-- node / npm
-- tmux
+### Install dependencies
 
 If they are not installed yet, under Ubuntu you can install with:
 
@@ -25,7 +22,7 @@ If they are not installed yet, under Ubuntu you can install with:
 sudo apt-get install -y zsh git git-core nodejs npm tmux
 ```
 
-## Install
+### Install dotfiles
 
 (Make sure you have installed all dependencies first!)
 
